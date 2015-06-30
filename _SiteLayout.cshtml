@@ -12,10 +12,36 @@
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
+        <!--Begin Header-->
         <header>
+            <section class="nav-links">
+                <!--Company Logo-->
+                <article class="company-picture">
+                    <p>Picture here</p>
+                </article>
+
+                <!--Navigation Links-->
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a>Pricing</a></li>
+                        <li><a>Moving Tips</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="contact-links">
+                <article>
+                    <!--Contact information-->
+                    <ul>
+                        <li><strong>Phone:</strong> xxx-xxx-xxxx</span></li>
+                        <li><strong>Email:</strong> backdraftmovers@yahoo.com</li>
+                    </ul>
+                </article>
+            </section>
         </header>
         <div id="body">
-            @RenderSection("featured", required: false)
             <section class="content-wrapper main-content clear-fix">
                 @RenderBody()
             </section>

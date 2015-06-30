@@ -1,1 +1,73 @@
-﻿
+﻿/*Site CSS*/
+body {
+   background-color: #353535; 
+   margin: 0px;
+   font-family: SinkinSans, Arial;
+}
+
+/*Custom Font*/
+@font-face {
+    font-family: SinkinSans;
+    src: url('SinkinSans.otf');
+}
+
+/*Header Styles*/
+header {
+    background-color: #FFFFFF;
+    height: 115px;
+    border-top: 2px solid #B13528;
+    margin: 0px 150px;
+}
+header article.company-picture {
+    width: 20%;
+    float: left;
+}
+header section.contact-links {
+    font-size: 9px;
+    color: #999999;
+    margin: 10px 0 0 40px;
+    height: 40px;
+    width: 100%;
+    display: inline;
+    float: left;
+    border-top: 1.5px solid rgba(153,153,153, 0.2);
+}
+header section.contact-links ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    opacity: 0.7;
+}
+header section.contact-links li {
+    display: inline;
+    border-right: 1.5px solid rgba(153,153,153, 0.2);
+    padding: 11px 10px;
+}
+nav {
+    float: right;
+    width: 60%;
+    height: 70px;
+    font-size: 12px;
+    font-variant: small-caps;
+    color: #353535;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+nav li {
+    display: inline;
+    padding: 0px 15px;
+}
+nav li a {
+    padding: 30px 0px;
+    cursor: pointer;
+}
+nav li a:hover {
+    color: #B13528;
+    border-bottom: 2px solid #B13528;
+}
+
+/*Home Page Styles*/
