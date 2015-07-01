@@ -1,0 +1,119 @@
+/*
+    Backdraft Carousel
+    Author: Drew T. Atkison
+    Date: 6/30/2015    
+*/
+
+/*Outer Containers -- In order*/
+.carousel {
+    width: 948px;
+    margin: auto;
+    padding: 10px 0;
+    color: white;
+}
+.sliderCar {
+    text-align: center;
+    margin-top: 40px;
+    width: 948px !important;
+    z-index: 1;
+}
+.sliderCar div {
+    width: 948px;
+    height: 400px;
+}
+
+/*Carousel Buttons*/
+article.nextBtn {
+    position: relative;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    line-height: 45px;
+    background-color: #B13528;
+    cursor: pointer;
+    z-index: 2;
+
+    -webkit-transition: opacity 0.8;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition: opacity 0.8;
+    -moz-transition-duration: 0.5s;
+}
+article.nextBtn:hover {
+    opacity: 0.2;
+}
+article.prevBtn {
+    position: relative;
+    top: 200px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    background-color: #B13528;
+    cursor: pointer;
+    z-index: 2;
+    
+    -webkit-transition: opacity 0.8;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition: opacity 0.8;
+    -moz-transition-duration: 0.5s;
+}
+article.prevBtn:hover {
+    opacity: 0.2;
+}
+
+
+/*Slide One*/
+.slide-one h2 {
+    font-size: 35px;
+    color: #B13528;
+    margin: 0;
+    text-transform: uppercase;
+}
+.slide-one p.tag-line {
+    font-size: 13px;
+}
+.slide-one p.services {
+    font-size: 11px;
+}
+a.about-btn {
+    -moz-transition: background-color #B13528, color: white, opacity 1.0;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition: background-color #B13528, color: white, opacity 1.0;
+    -webkit-transition-duration: 0.5s;
+    background-color: #B13528;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 5px 50px;
+    position: relative;
+    top: 30px;
+    right: 15px;
+    cursor: pointer;
+}
+a.about-btn:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+a.contact-btn {
+    -moz-transition: background-color #B13528, color: white, opacity 1.0;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition: background-color #B13528, color: white, opacity 1.0;
+    -webkit-transition-duration: 0.5s;
+    background-color: #B13528;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    position: relative;
+    top: 30px;
+    left: 15px;
+    cursor: pointer;
+}
+a.contact-btn:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.8;
+}
+

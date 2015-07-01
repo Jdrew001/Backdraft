@@ -27,7 +27,7 @@ header section.contact-links {
     color: #999999;
     margin: 10px 0 0 40px;
     height: 40px;
-    width: 100%;
+    width: 92%;
     display: inline;
     float: left;
     border-top: 1.5px solid rgba(153,153,153, 0.2);
@@ -71,3 +71,161 @@ nav li a:hover {
 }
 
 /*Home Page Styles*/
+/*Services Content*/
+section.service-container {
+    height: 600px;
+    background-color: white;
+    z-index: 1;
+}
+section.service-container div.surface {
+    width: 960px;
+    margin: auto
+}
+section.service-container ul {
+    list-style-type: none;
+    padding: 80px 0 0 0;
+    margin: 0 0 0 5%;
+}
+section.service-container li {
+    display: inline;
+}
+li.services-txt {
+    /*Border....*/
+    font-size: 13px;
+    width: 150px;
+    margin: 0
+}
+li.company-description {
+    width: 400px;
+    font-size: 10px;
+    color: rgba(153,153,153, 0.7);
+    padding-left: 80px;
+}
+/*Service Items*/
+div.item-container {
+    text-align: center;
+    padding-top: 70px;
+    margin: auto;
+}
+div.service-one {
+    -webkit-transition: background-color white;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition: background-color white;
+    -moz-transition-duration: 0.5s;
+    border: 1px solid rgba(153,153,153, 0.4);
+    width: 250px;
+    height: 250px;
+    float: left;
+    cursor: pointer;
+    margin: 0 5% 0px 5%;
+}
+div.service-one:hover {
+    background-color: #B13528;
+    color: white;
+}
+div.service-one img {
+    width: 40px;
+    height: 40px;
+    padding-top: 40px;
+}
+div.service-one h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+div.service-one p {
+    font-size: 10px;
+    padding: 5px 10px;
+    opacity: 0;
+}
+div.service-two {
+    -webkit-transition: background-color white;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition: background-color white;
+    -moz-transition-duration: 0.5s;
+    border: 1px solid rgba(153,153,153, 0.4);
+    width: 250px;
+    height: 250px;
+    margin: 0 5% 0 0; 
+    float: left;
+    cursor: pointer;
+}
+div.service-two:hover {
+    background-color: #B13528;
+    color: white;
+}
+div.service-two img {
+    width: 40px;
+    height: 40px;
+    padding-top: 40px;
+}
+div.service-two h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+div.service-two p {
+    font-size: 10px;
+    padding: 5px 10px;
+    opacity: 0;
+}
+div.service-three {
+    -webkit-transition: background-color white;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition: background-color white;
+    -moz-transition-duration: 0.5s;
+    border: 1px solid rgba(153,153,153, 0.4);
+    width: 250px;
+    height: 250px;
+    float: left;
+    cursor: pointer;
+}
+div.service-three:hover {
+    background-color: #B13528;
+    color: white;
+}
+div.service-three img {
+    width: 40px;
+    height: 40px;
+    padding-top: 40px;
+}
+div.service-three h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+div.service-three p {
+    font-size: 10px;
+    padding: 5px 10px;
+    opacity: 0;
+}
+/*Advertise text under service items*/
+div.advertise-text {
+    padding-top: 280px;
+    font-size: 10px;
+    margin: 0px 5%;
+}
+div.advertise-text p {
+    width: 80%;
+    float:left
+}
+div.advertise-text a {
+    width: 16%;
+    color: white;
+    background-color: #B13528;
+    margin-top: 5px;
+    font-size: 10px;
+    float:left;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 1.0;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+}
+div.advertise-text a:hover {
+    opacity: 0.5;
+}
+/*Class added with jquery*/
+.active {
+    background-color: #B13528;
+    color: white;
+}
