@@ -1,0 +1,236 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Home";
+}
+
+
+
+<!--Begin of Image Carousel-->
+<section class="carousel">
+    <article id="next" class="nextBtn">
+        <!--Right angle symbol-->
+        &rang;
+    </article>
+    <article id="prev" class="prevBtn">
+        <!--Left angle symbol-->
+        &lang;
+    </article>
+    <article id="slider" class="sliderCar">
+        <!--Slider Content-->
+        <div class="slide-one">
+            <!--Slide One-->
+            <p class="tag-line">Let us take the heat for you</p>
+
+            <h2>Backdraft Movers, LLC</h2>
+
+            <p class="services">Residental and Office Moving</p>
+            <p class="services">Packing and Delivery</p>
+            
+            <!--Buttons-->
+            <a class="about-btn" href="About">About Us</a>
+            <a class="contact-btn" href="Contact">Contact Us</a>
+        </div>
+        <div class="slide-two">
+            <!--Slide Two-->
+            <img src="~/Content/Images/Picture_One.png" alt="Backdraft-One"/>
+        </div>
+        <div class="slide-three">
+            <!--Slide three-->
+            <img src="~/Content/Images/Picture_Two.png" alt="Backdraft-One"/>
+        </div>
+        <div class="slide-four">
+            <!--Slide three-->
+            <img src="~/Content/Images/Picture_Three.png" alt="Backdraft-One"/>
+        </div>
+        <div class="slide-five">
+            <!--Slide three-->
+            <img src="~/Content/Images/Picture_Four.png" alt="Backdraft-One"/>
+        </div>
+        <div class="slide-six">
+            <!--Slide three-->
+            <img src="~/Content/Images/Picture_Five.png" alt="Backdraft-One"/>
+        </div>
+    </article>
+</section>
+<!--End of Carousel-->
+
+<!--Services Offered-->
+<section class="service-container">
+    <div class="surface">
+        <ul>
+            <li class="services-txt">Our Services</li>
+            <li class="company-description">Backdraft Movers is a company with..................</li>
+        </ul>
+        <!--Services-->
+        <div class="item-container">
+           <div class="service-one">
+               <img src="~/Content/Images/Map@2x.png" alt="State Move Icon" />
+               <h4>State and Local Moves</h4>
+               <p>Text that will display the details involving moving in state and local</p>
+           </div>
+           <div class="service-two">
+                <img src="~/Content/Images/Clipboard@2x.png" alt="Office Moves" />
+                <h4>Residential and Office Moves</h4>
+               <p>Text that will display the details involving residential and office moves</p>
+           </div>
+           <div class="service-three">
+                <img src="~/Content/Images/Truck@2x.png" alt="Piano Moves" />
+                <h4>Piano Moving</h4>
+               <p>Text that will display the details involving piano moves</p>
+           </div>
+        </div>
+        <div class="advertise-text">
+            <p>This is text that will display to the users of the site telling them who you are and then they will click on it to go to the contact page and you will get more business!</p>
+            <a>Contact Us</a>
+        </div>
+    </div>
+    <!--End Services-->
+</section>
+<!--End Services Offered-->
+
+<!--About and Why Section-->
+<section class="about-why-section">
+    <div class="article-container">
+        <article class="about-article">
+            <h3>About Backdraft Movers</h3>
+
+            <!--Accordian-->
+            <ul class="about-backdraft-home">
+                <li class="about-company">
+                    <a class="header-one accordian-header">About Company</a>
+                    <p id="first" class="accordian-content">Backdraft Movers is a local firefighter owned and operated company.  We use off duty firefighters along with professional full time staff.  Regardless of whoever responds to your moving needs with Backdraft movers they will be trustworthy, courteous, professional, and hard working.</p>
+                </li>
+                <li class="our-mission">
+                    <a class="header-two accordian-header">Our Goal</a>
+                    <p id="second" class="accordian-content">Our goal is 100% customer satisfaction.  We want to leave our customers not only happy, but impressed with a job we done.  </p>
+                </li>
+                <li class="our-vision">
+                    <a class="header-three accordian-header">Some Title</a>
+                    <p id="third" class="accordian-content">Backdraft Movers is a full service moving company offering very competitive rates with high quality service.  The owner and employees have years of experience in residential and office moves, furniture delivery, assembly and disassembly.</p>
+                </li>
+            </ul>
+
+        </article>
+    </div>
+</section>
+<!--End of About and Why section-->
+
+
+<!--Scripts-->
+<script src="~/Scripts/Carousel.js"></script>
+<script>
+    //Carousel Initialization
+    $('#slider').cycle({
+
+        fx: 'scrollHorz',
+        next: '#next',
+        prev: '#prev',
+        timeout: 6000
+
+    });
+
+
+    //Services Script
+    $(".service-one").click(function () {
+
+        //Check to see if the div with class 'service-one'
+        //has the class 'active' added to it and if it does not add it
+        //if so remove it...Same with all three
+        //Also animating the paragraph to visble if active
+        if ($('div.service-one').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-one").removeClass("active");
+            $("div.service-one > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-one").addClass("active");
+            $("div.service-one > p").animate({ opacity: '1.0' }, "0.5");
+        }
+
+    });
+    $(".service-two").click(function () {
+
+        if ($('div.service-two').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-two").removeClass("active");
+            $("div.service-two > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-two").addClass("active");
+            $("div.service-two > p").animate({ opacity: '1.0' }, "0.5");
+        }
+
+    });
+    $(".service-three").click(function () {
+
+        if ($('div.service-three').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-three").removeClass("active");
+            $("div.service-three > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-three").addClass("active");
+            $("div.service-three > p").animate({ opacity: '1.0' }, "0.5");
+        }
+    });
+
+    //When page loads, hide the three accordian paragraphs 
+    $(document).ready(function () {
+        $('p#first').show();
+        $('p#first').css('opacity', '1.0');
+        $('p#second').hide();
+        $('p#third').hide();
+    });
+
+    //Accordian Script
+    $('a.header-one').click(function () {
+
+        //Close all the other paragraphs opened
+        $('p#second').hide(500);
+        $('p#third').hide(500);
+
+        if ($('p#first').css('display') === 'none') {
+
+            //Then show the first paragraph and set the opacity to 0.5
+            $('p#first').show(500);
+            $("p#first").animate({ opacity: '1.0' }, "0.5");
+
+        } else if ($('p#first').css('display') === 'block') {
+            //$("p#first").animate({ opacity: '0' }, "0.5");
+            $('p#first').hide(500);
+        }
+    });
+
+    $('a.header-two').click(function () {
+
+        //Close all the other headers opened
+        $('p#first').hide(500);
+        $('p#third').hide(500);
+
+        if ($('p#second').css('display') === 'none') {
+            $('p#second').show(500);
+            $("p#second").animate({ opacity: '1.0' }, "0.5");
+
+        } else if ($('p#second').css('display') === 'block') {
+            //$("p#second").animate({ opacity: '0' }, "0.5");
+            $('p#second').hide(500);
+        }
+    });
+
+    $('a.header-three').click(function () {
+
+        //Close all the other headers opened
+        $('p#first').hide(500);
+        $('p#second').hide(500);
+
+        if ($('p#third').css('display') === 'none') {
+            $('p#third').show(500);
+            $("p#third").animate({ opacity: '1.0' }, "0.5");
+
+        } else if ($('p#third').css('display') === 'block') {
+            //$("p#third").animate({ opacity: '0' }, "0.5");
+            $('p#third').hide(500);
+
+        }
+    });
+</script>

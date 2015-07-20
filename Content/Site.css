@@ -16,7 +16,8 @@ header {
     background-color: #FFFFFF;
     height: 115px;
     border-top: 2px solid #B13528;
-    margin: 0px 150px;
+    margin: 0px 10%;
+    padding-bottom: 20px;
 }
 header article.company-picture {
     width: 20%;
@@ -64,10 +65,156 @@ nav li {
 nav li a {
     padding: 30px 0px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 nav li a:hover {
     color: #B13528;
     border-bottom: 2px solid #B13528;
+}
+
+/*Footer Styles*/
+footer {
+    background-color: #191919;
+    height: 600px;
+}
+section.top-footer {
+    background-color: #262626;
+    height: 180px;
+    margin: 0px 10%;
+    border-top: 3px solid #B13528;
+}
+article.about-footer {
+    width: 40%;
+    border: 1px solid #383838;
+    margin: 20px 0 0 25px;
+    float: left;
+}
+article.about-footer h4 {
+    color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    width: 50%;
+}
+article.about-footer img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 40px 30px 20px 10px;
+}
+article.about-footer p {
+    font-size: 10px;
+    color: white;
+    padding: 0 10px 10px 22%;
+}
+article.address-footer {
+    width: 25%;
+    float: left;
+    border: 1px solid #383838;
+    margin: 20px 0 0 22px;
+}
+article.address-footer h4 {
+    color: white;
+    width: 50%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+article.address-footer img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-top: 40px;
+}
+article.address-footer p {
+    font-size: 10px;
+    color: white;
+    width: 60%;
+    margin-left: 50px;
+    padding: 0 0 20px 0;
+}
+article.contact-footer {
+    width: 25%;
+    border: 1px solid #383838;
+    float: left;
+    margin: 20px 0 0 22px;
+}
+article.contact-footer h4 {
+    color: white;
+    width: 60%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+article.contact-footer img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding-top: 40px;
+}
+article.contact-footer p {
+    font-size: 10px;
+    color: white;
+    width: 80%;
+    margin-left: 50px;
+    padding: 0 0 20px 0;
+}
+section.bottom-footer {
+    margin: 0px 10%;
+}
+article.business-hours {
+    color: white;
+    width: 30%;
+    float: left;
+    padding: 80px 0 0 0;
+}
+article.business-hours h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 25px;
+}
+article.business-hours ul {
+    list-style-type: none;
+    font-size: 10px;
+}
+article.business-hours li.hours-heading {
+    color: #888888;
+}
+article.business-hours li.list-hours {
+    color: #666666;
+    padding-top: 5px;
+}
+article.navigation {
+    color: white;
+    width: 30%;
+    float: right;
+    padding: 80px 0 0 0;
+}
+article.navigation h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-left: 75px;
+}
+article.navigation ul {
+    list-style-type: none;
+}
+article.navigation li {
+    font-size: 10px;
+    color: #666666;
+    padding-left: 55px;
+    cursor: pointer;
+    padding: 10px 0 0 55px;
+}
+article.navigation li:hover {
+    color: #B13528;
+}
+article.navigation a {
+    text-decoration: none;
+    color: #888;
+}
+article.navigation a:hover {
+    color: #B13528;
+}
+article.navigation span {
+    color: #B13528;
 }
 
 /*Home Page Styles*/
@@ -78,13 +225,12 @@ section.service-container {
     z-index: 1;
 }
 section.service-container div.surface {
-    width: 960px;
+    width: 80%;
     margin: auto
 }
 section.service-container ul {
     list-style-type: none;
-    padding: 80px 0 0 0;
-    margin: 0 0 0 5%;
+    padding: 80px 0px 0px;
 }
 section.service-container li {
     display: inline;
@@ -108,16 +254,15 @@ div.item-container {
     margin: auto;
 }
 div.service-one {
-    -webkit-transition: background-color white;
+    -webkit-transition: background-color #F6F6F6;
     -webkit-transition-duration: 0.5s;
-    -moz-transition: background-color white;
+    -moz-transition: background-color #F6F6F6;
     -moz-transition-duration: 0.5s;
     border: 1px solid rgba(153,153,153, 0.4);
     width: 250px;
     height: 250px;
     float: left;
     cursor: pointer;
-    margin: 0 5% 0px 5%;
 }
 div.service-one:hover {
     background-color: #B13528;
@@ -138,16 +283,19 @@ div.service-one p {
     opacity: 0;
 }
 div.service-two {
-    -webkit-transition: background-color white;
+    -webkit-transition: background-color #F6F6F6;
     -webkit-transition-duration: 0.5s;
-    -moz-transition: background-color white;
+    -moz-transition: background-color #F6F6F6;
     -moz-transition-duration: 0.5s;
     border: 1px solid rgba(153,153,153, 0.4);
     width: 250px;
-    height: 250px;
-    margin: 0 5% 0 0; 
+    height: 250px; 
     float: left;
     cursor: pointer;
+    margin: 0px auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
 }
 div.service-two:hover {
     background-color: #B13528;
@@ -168,14 +316,14 @@ div.service-two p {
     opacity: 0;
 }
 div.service-three {
-    -webkit-transition: background-color white;
+    -webkit-transition: background-color #F6F6F6;
     -webkit-transition-duration: 0.5s;
-    -moz-transition: background-color white;
+    -moz-transition: background-color #F6F6F6;
     -moz-transition-duration: 0.5s;
-    border: 1px solid rgba(153,153,153, 0.4);
+    border: 1px solid rgba(153, 153, 153, 0.4);
     width: 250px;
     height: 250px;
-    float: left;
+    float: right;
     cursor: pointer;
 }
 div.service-three:hover {
@@ -200,7 +348,6 @@ div.service-three p {
 div.advertise-text {
     padding-top: 280px;
     font-size: 10px;
-    margin: 0px 5%;
 }
 div.advertise-text p {
     width: 80%;
@@ -210,7 +357,7 @@ div.advertise-text a {
     width: 16%;
     color: white;
     background-color: #B13528;
-    margin-top: 5px;
+    margin: 5px 0 0 4%;
     font-size: 10px;
     float:left;
     padding: 8px 0;
@@ -224,8 +371,516 @@ div.advertise-text a {
 div.advertise-text a:hover {
     opacity: 0.5;
 }
+
+
+/*Third Section -- About and why us section of the home page*/
+/*About Company Section... Accordian Styles*/
+section.about-why-section {
+    background-color: #F6F6F6;
+    height: 550px;
+}
+div.article-container {
+    width: 80%;
+    margin: auto;
+}
+article.about-article {
+    width: 46%;
+    float: left;
+    
+}
+ul.about-backdraft-home {
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    margin: 50px 0 0 0;
+    padding: 3px 0px 9% 10px;
+    list-style-type: none;
+    height: auto;
+    background-color: white;
+}
+li.about-company {
+    font-size: 12px;
+    border-bottom: 1px solid rgba(153,153,153, 0.4);
+    width: 95%;
+}
+li.our-mission {
+    font-size: 12px;
+    border-bottom: 1px solid rgba(153,153,153, 0.4);
+    width: 95%;
+}
+li.our-vision {
+    font-size: 12px;
+    border-bottom: 1px solid rgba(153,153,153, 0.4);
+    width: 95%;
+}
+.accordian-header {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: block;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.accordian-header:hover {
+    color: #B13528;
+    
+}
+.accordian-content {
+    opacity: 0.0;
+    overflow: visible;
+    padding: 0 0 20px 0;
+    color: rgba(153,153,153, 1);
+}
+
+article.about-article h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 50px 0px 0px;
+}
+
+/*Why Choose Us*/
+article.choose-article {
+    width: 54%;
+    float: left;
+    height: 440px;
+}
+article.choose-article h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 50px 0px 0px 2%;
+}
+div.choose-container {
+    margin: 50px 0px 0px 5%;
+}
+div.choose-one {
+    width: 49%;
+    float:left;
+    border: 1px solid rgba(153,153,153, 0.4);
+    cursor: pointer;
+    background-color: white;
+    
+}
+div.choose-one:hover {
+    color: #B13528;
+}
+div.choose-one h4 {
+    font-size: 12px;
+    padding: 10px;
+}
+div.choose-one p {
+    font-size: 10px;
+}
+div.choose-four p {
+    font-size: 10px;
+}
+div.choose-two {
+    width: 49%;
+    float:left;
+    border: 1px solid rgba(153,153,153, 0.4);
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    background-color: white;
+}
+div.choose-two:hover {
+    color: #B13528;
+}
+div.choose-two h4 {
+    font-size: 12px;
+    padding: 10px;
+}
+div.choose-two p {
+    font-size: 10px;
+}
+div.choose-three {
+    width: 49%;
+    float:left;
+    border: 1px solid rgba(153,153,153, 0.4);
+    margin: 20px 0 0 0;
+    cursor: pointer;
+    background-color: white;
+}
+div.choose-three:hover {
+    color: #B13528;
+}
+div.choose-three h4 {
+    font-size: 12px;
+    padding: 10px;
+}
+div.choose-three p {
+    font-size: 10px;
+}
+div.choose-four{
+    width: 49%;
+    float:left;
+    border: 1px solid rgba(153,153,153, 0.4);
+    margin: 20px 0 0 5px;
+    cursor: pointer;
+    background-color: white;
+}
+div.choose-four:hover {
+    color: #B13528;
+}
+div.choose-four h4 {
+    font-size: 12px;
+    padding: 10px;
+}
+div.choose-four p {
+    font-size: 10px;
+}
+
 /*Class added with jquery*/
 .active {
     background-color: #B13528;
     color: white;
+}
+
+
+/*About Us Page -- Begin --*/
+section.about-title {
+    width: 80%;
+    margin: auto;
+    
+    padding: 40px 0;
+}
+article.header-article {
+    width: 50%;
+}
+section.about-title h1 {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+section.about-title p {
+    color: white;
+    font-size: 9px;
+}
+a.anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 9px;
+}
+a.anchor:hover {
+    border-bottom: 1px solid #B13528;
+}
+article.about-bread {
+    width: 50%;
+}
+section.about-section-container-one {
+    background-color: white;
+    height: 400px;
+}
+section.about-section-container-two {
+    background-color: #F6F6F6;
+}
+div.about-surface {
+    margin: auto;
+    width: 80%;
+}
+article.about-article-one {
+    padding: 40px 0 20px 0;
+}
+article.about-article-one ul {
+    list-style-type: none;
+}
+article.about-article-one li.li-about{
+    float: left;
+}
+article.about-article-two {
+    width: 24%;
+    float:left;
+    padding-left: 10px;
+}
+p.red-number {
+    color: #B13528;
+    font-size: 12px;
+}
+ul.about-ul {
+    margin: 0;
+}
+p.about-text {
+    color: rgba(153,153,153, 0.8);
+    font-size: 12px;
+}
+article.about-article-two a {
+    font-size: 10px;
+    cursor: pointer;
+}
+article.about-article-two a:hover {
+    color: #B13528;
+    border-bottom: 1px solid #B13528;
+}
+article.about-article-three {
+    width: 24%;
+    float:left;
+    padding-left: 10px;
+}
+article.about-article-three a {
+    font-size: 10px;
+    cursor: pointer;
+}
+article.about-article-three a:hover {
+    color: #B13528;
+    border-bottom: 1px solid #B13528;
+}
+article.about-article-four {
+    width: 24%;
+    float:left;
+    padding-left: 10px;
+}
+article.about-article-four a {
+    font-size: 10px;
+    cursor: pointer;
+}
+article.about-article-four a:hover {
+    color: #B13528;
+    border-bottom: 1px solid #B13528;
+}
+article.about-article-five {
+    width: 24%;
+    float:left;
+    padding-left: 10px;
+}
+article.about-article-five a {
+    font-size: 10px;
+    cursor: pointer;
+}
+article.about-article-five a:hover {
+    color: #B13528;
+    border-bottom: 1px solid #B13528;
+}
+section.service-about-container {
+    height: 600px;
+    background-color:  #F6F6F6 !important;
+    z-index: 1;
+}
+
+/*Begin Contact Styles*/
+section.contact-container {
+    background-color: #FFF;
+    height: 400px;
+}
+div.contact-surface {
+    margin: auto;
+    width: 80%;
+}
+article.contact-form {
+    width: 60%;
+    float: left;
+}
+article.contact-form input.name {
+    width: 33%;
+    height: 40px;
+    color: rgba(153,153,153, 1.0);
+    opacity: 0.8;
+    padding: 0px 30px;
+    margin: 40px 0px 0px 0px;
+    font-family: SinkinSans;
+}
+article.contact-form input.email {
+    width: 33%;
+    height: 40px;
+    color: rgba(153,153,153, 1.0);
+    opacity: 0.8;
+    padding: 0px 30px;
+    margin: 40px 0px 0px 20px;
+    font-family: SinkinSans;
+}
+article.contact-form textarea {
+    width: 79.4%;
+    height: 120px;
+    margin: 30px 0 0 0;
+    color: rgba(153,153,153, 1.0);
+    opacity: 0.8;
+    resize: none;
+    font-family: SinkinSans;
+    font-size: 12px;
+    padding: 10px 30px;
+}
+article.contact-form button {
+    color: white;
+    background-color: #B13528;
+    display: block;
+    border: none;
+    font-family: SinkinSans;
+    font-size: 9px;
+    width: 89%;
+    height: 35px;
+    margin-top: 40px; 
+    cursor: pointer;
+}
+article.contact-information {
+    width: 35%;
+    float: left;
+
+}
+article.contact-information p.contact-tagline {
+    color: rgba(153,153,153, 0.7);
+    font-size: 10px;
+    margin-top: 40px;
+}
+article.contact-information div.top-row {
+    width: 50%;
+    float: left;
+}
+article.contact-information div.top-row h5 {
+    font-size: 11px;
+    float: left;
+    width: 100%;
+}
+article.contact-information div.top-row img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 6px;
+}
+article.contact-information div.top-row p {
+    width: 15%;
+    font-size: 10px;
+    float: left;
+    padding-left: 10px;
+}
+article.contact-information div.bottom-row h5 {
+    font-size: 11px;
+    width: 100%;
+    margin-top: 120px;
+}
+article.contact-information div.bottom-row img {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 6px;
+}
+article.contact-information div.bottom-row p {
+    width: 80%;
+    font-size: 10px;
+    float: left;
+    padding-left: 10px;
+}
+
+/*Begin Pricing Page Styles*/
+section.pricing-container {
+    background-color: white;
+    height: 700px;
+}
+div.pricing-service {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+div.pricing-service p.bottom-text {
+    font-size: 9px;
+    padding: 0 0 0 15px;
+}
+div.pricing-service div.pricing-details h5 {
+    font-size: 10px;
+    padding: 5px 5px;
+}
+div.pricing-service div.pricing-details p {
+    font-size: 10px;
+    color: #B13528;
+}
+div.pricing-service div.pricing-details a {
+    -moz-transition: opacity 1.0;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition: opacity 1.0;
+    -webkit-transition-duration: 0.5s;
+    font-size: 10px;
+    background-color: #B13528;
+    text-decoration: none;
+    color: white;
+    padding: 10px 60px;
+}
+div.pricing-service div.pricing-details a:hover {
+    opacity: 0.8;
+}
+article.pricing-tagline {
+    text-align: left;
+    padding-top: 40px;
+}
+article.pricing-tagline ul {
+    list-style-type: none;
+}
+article.pricing-tagline li {
+    display: inline;
+}
+article.pricing-tagline li.tagline-header {
+    font-size: 12px;
+}
+article.pricing-tagline li.tagline-paragraph {
+    font-size: 10px;
+    padding-left: 60px;
+    color: rgba(153, 153, 153, 0.7);
+}
+article.pricing-one {
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    width: 250px;
+    height: 485px;
+    float: left;
+    margin: 50px 0;
+}
+article.pricing-one img {
+    background-color: #B13528;
+    width: 50px;
+    height: 50px;
+}
+article.pricing-one h4 {
+    font-size: 30px;
+    margin: 0;
+}
+article.pricing-one span {
+    font-size: 14px !important;
+}
+article.pricing-one div.left-price {
+    background-color: #B13528;
+    color: white;
+    padding: 20px 0px;
+}
+article.pricing-two {
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    margin: 50px auto;
+    float: left;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 250px;
+    height: 485px;
+}
+article.pricing-two img {
+    background-color: #B13528;
+    width: 50px;
+    height: 50px;
+}
+article.pricing-two h4 {
+    font-size: 30px;
+    margin: 0;
+}
+article.pricing-two span {
+    font-size: 14px !important;
+}
+article.pricing-two div.middle-price {
+    background-color: #B13528;
+    color: white;
+    padding: 20px 0px;
+}
+article.pricing-three {
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    width: 250px;
+    height: 485px;
+    float: right;
+    margin: 50px 0;
+}
+article.pricing-three img {
+    background-color: #B13528;
+    width: 50px;
+    height: 50px;
+}
+article.pricing-three h4 {
+    font-size: 30px;
+    margin: 0;
+}
+article.pricing-three span {
+    font-size: 14px !important;
+}
+article.pricing-three div.right-price {
+    background-color: #B13528;
+    color: white;
+    padding: 20px 0px;
 }

@@ -1,35 +1,135 @@
 ﻿@{
     Layout = "~/_SiteLayout.cshtml";
-    Page.Title = "About";
+    Page.Title = "About Us";
+
+/*
+    About Page
+    Author: Drew Atkison
+*/
 }
 
-<hgroup class="title">
-    <h1>@Page.Title.</h1>
-    <h2>Your app description page.</h2>
-</hgroup>
+<!--About Us title-->
+<section class="about-title">
+    <article class="header-article">
+        <h1><strong>About Us</strong></h1>
+    </article>
+    <article class="about-bread">
+        <p><a class="anchor" href="Index">Home</a> / <a class="anchor" href="About">About Us</a></p>
+    </article>
+</section>
 
-<article>
-    <p>
-        Use this area to provide additional information.
-    </p>
+<!--About Us 1 and 2-->
+<section class="about-section-container-one">
+    <div class="about-surface">
+        <article class="about-article-one">
+            <ul>
+                <li class="services-txt li-about">Welcome</li>
+                <li class="company-description">Backdraft is a company that serves their clients</li>
+            </ul>
+        </article>
+        <article class="about-article-two">
+            <p class="red-number">01.</p>
+            <h4>Our Company</h4>
+            <p class="about-text">Placement text about the company</p>
+            <a id="">Read More</a>
+        </article>
+        <article class="about-article-three">
+            <p class="red-number">02.</p>
+            <h4>Our History</h4>
+            <p class="about-text">Placement text about the history</p>
+            <a>Read More</a>
+        </article>
+        <article class="about-article-four">
+            <p class="red-number">03.</p>
+            <h4>Our Mission</h4>
+            <p class="about-text">Placement text about the mission or goal</p>
+            <a>Read More</a>
+        </article>
+        <article class="about-article-five">
+            <p class="red-number">04.</p>
+            <h4>Our Values</h4>
+            <p class="about-text">Placement text about the values of the site</p>
+            <a>Read More</a>
+        </article>
+    </div>
+</section>
 
-    <p>
-        Use this area to provide additional information.
-    </p>
+<!--Services Offered-->
+<section class="service-container service-about-container">
+    <div class="surface">
+        <ul class="about-ul">
+            <li class="services-txt">Our Services</li>
+            <li class="company-description">Backdraft Movers is a company with..................</li>
+        </ul>
+        <!--Services-->
+        <div class="item-container">
+           <div class="service-one">
+               <img src="~/Content/Images/Map@2x.png" alt="State Move Icon" />
+               <h4>State and Local Moves</h4>
+               <p>Text that will display the details involving moving in state and local</p>
+           </div>
+           <div class="service-two">
+                <img src="~/Content/Images/Clipboard@2x.png" alt="Office Moves" />
+                <h4>Residential and Office Moves</h4>
+               <p>Text that will display the details involving residential and office moves</p>
+           </div>
+           <div class="service-three">
+                <img src="~/Content/Images/Truck@2x.png" alt="Piano Moves" />
+                <h4>Piano Moving</h4>
+               <p>Text that will display the details involving piano moves</p>
+           </div>
+        </div>
+        <div class="advertise-text">
+            <p>This is text that will display to the users of the site telling them who you are and then they will click on it to go to the contact page and you will get more business!</p>
+            <a>Contact Us</a>
+        </div>
+    </div>
+</section>
+<!--End Services-->
+<script>
 
-    <p>
-        Use this area to provide additional information.
-    </p>
-</article>
+    //Services Script
+    $(".service-one").click(function () {
 
-<aside>
-    <h3>Aside Title</h3>
-    <p>
-        Use this area to provide additional information.
-    </p>
-    <ul>
-        <li><a href="~/">Home</a></li>
-        <li><a href="~/About">About</a></li>
-        <li><a href="~/Contact">Contact</a></li>
-    </ul>
-</aside>
+        //Check to see if the div with class 'service-one'
+        //has the class 'active' added to it and if it does not add it
+        //if so remove it...Same with all three
+        //Also animating the paragraph to visble if active
+        if ($('div.service-one').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-one").removeClass("active");
+            $("div.service-one > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-one").addClass("active");
+            $("div.service-one > p").animate({ opacity: '1.0' }, "0.5");
+        }
+
+    });
+    $(".service-two").click(function () {
+
+        if ($('div.service-two').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-two").removeClass("active");
+            $("div.service-two > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-two").addClass("active");
+            $("div.service-two > p").animate({ opacity: '1.0' }, "0.5");
+        }
+
+    });
+    $(".service-three").click(function () {
+
+        if ($('div.service-three').hasClass('active')) {
+            //console.log("Remove Class");
+            $("div.service-three").removeClass("active");
+            $("div.service-three > p").animate({ opacity: '0' }, "0.5");
+        } else {
+            //console.log("Add Class");
+            $("div.service-three").addClass("active");
+            $("div.service-three > p").animate({ opacity: '1.0' }, "0.5");
+        }
+    });
+
+</script>

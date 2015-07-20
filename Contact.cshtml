@@ -3,49 +3,44 @@
     Page.Title = "Contact";
 }
 
-<hgroup class="title">
-    <h1>@Page.Title.</h1>
-    <h2>Your contact page.</h2>
-</hgroup>
-
-<section class="contact">
-    <header>
-        <h3>Phone:</h3>
-    </header>
-    <p>
-        <span class="label">Main:</span>
-        <span>425.555.0100</span>
-    </p>
-    <p>
-        <span class="label">After Hours:</span>
-        <span>425.555.0199</span>
-    </p>
+<!--Contact Us title-->
+<section class="about-title">
+    <article class="header-article">
+        <h1><strong>Contact Us</strong></h1>
+    </article>
+    <article class="about-bread">
+        <p><a class="anchor" href="Index">Home</a> / <a class="anchor" href="Contact">Contact</a></p>
+    </article>
 </section>
 
-<section class="contact">
-    <header>
-        <h3>Email:</h3>
-    </header>
-    <p>
-        <span class="label">Support:</span>
-        <span><a href="mailto:Support@example.com">Support@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">Marketing:</span>
-        <span><a href="mailto:Marketing@example.com">Marketing@example.com</a></span>
-    </p>
-    <p>
-        <span class="label">General:</span>
-        <span><a href="mailto:General@example.com">General@example.com</a></span>
-    </p>
-</section>
-
-<section class="contact">
-    <header>
-        <h3>Address:</h3>
-    </header>
-    <p>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399
-    </p>
+<!--Contact Us Form-->
+<section class="contact-container">
+    <div class="contact-surface">
+        <article class="contact-form">
+            <form>
+                <input class="name" type="text" placeholder="Name: " />
+                <input class="email" type="email" placeholder="Email: " />
+                <textarea placeholder="Message"></textarea>
+                <button>Send Message</button>
+            </form>
+        </article>
+        <article class="contact-information">
+            <p class="contact-tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue ipsum in elit auctor, vel venenatis nunc pretium. Aenean scelerisque. </p>
+            <div class="top-row">
+                <h5>Phone: </h5>
+                <img src="~/Content/Images/Phone-red.png" alt="Phone Icon" />
+                <p>xxx-xxx-xxxx</p>
+            </div>
+            <div class="top-row">
+                <h5>Email: </h5>
+                <img src="~/Content/Images/Mail.png" alt="Mail Icon" />
+                <p>backdraftmovers@yahoo.com</p>
+            </div>
+            <div class="bottom-row">
+                <h5>Address: </h5>
+                <img src="~/Content/Images/Location-red.png" alt="Location Icon" />
+                <p>Some Address</p>
+            </div>
+        </article>
+    </div>
 </section>

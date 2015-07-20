@@ -24,11 +24,11 @@
                 <!--Navigation Links-->
                 <nav>
                     <ul>
-                        <li><a>Home</a></li>
-                        <li><a>About Us</a></li>
-                        <li><a>Contact</a></li>
-                        <li><a>Pricing</a></li>
-                        <li><a>Moving Tips</a></li>
+                        <li><a href="../Index">Home</a></li>
+                        <li><a href="About">About Us</a></li>
+                        <li><a href="Contact">Contact</a></li>
+                        <li><a href="Pricing">Pricing</a></li>
+                        <li><a href="Moving-Tips">Moving Tips</a></li>
                     </ul>
                 </nav>
             </section>
@@ -48,7 +48,49 @@
             </section>
         </div>
         <footer>
+            <section class="top-footer">
+                <article class="about-footer">
+                    <img src="~/Content/Images/about.png" alt="About Icon" />
+                    <h4>About Us</h4>
+                    <p>Backdraft Movers is a local firefighter owned and operated company. We use off duty firefighters along with professional full time staff</p>
+                </article>
+                <article class="address-footer">
+                    <img src="~/Content/Images/Location.png" alt="Location Icon" />
+                    <h4>Address</h4>
+                    <p>1200 Some Street 12 <br/> Euless, TX 76039</p>
+                </article>
+                <article class="contact-footer">
+                    <img src="~/Content/Images/Phone.png" alt="Contact Icon" />
+                    <h4>Contact Us</h4>
+                    <p>p: XXX-XXX-XXXX<br />E: backdraftmovers@yahoo.com</p>
+                </article>
+            </section>
+            <section class="bottom-footer">
+                <article class="business-hours">
+                    <h4>Business Hours</h4>
+                    <ul>
+                        <li class="hours-heading">Opening Days</li>
+                        <li class="list-hours">Monday-Friday: x:xx-x:xx</li>
+                        <br />
+                        <li class="hours-heading">Vacations</li>
+                        <li class="list-hours">Holidays</li>
+                        <li class="list-hours">Weekends</li>
+                    </ul>
+                </article>
+                <article></article>
+                <article></article>
+                <article class="navigation">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="Index"><span>&rArr;</span> Home</a></li>
+                        <li><a href="About"><span>&rArr;</span> About Us</a></li>
+                        <li><a href="Contact"><span>&rArr;</span> Contact</a></li>
+                        <li><a href="Pricing"><span>&rArr;</span> Pricing</a></li>
+                        <li><a href="Moveing-Tips"><span>&rArr;</span> Moving Tips</a></li>
+                    </ul>
+                </article>
+            </section>
         </footer>
-        @RenderSection("Scripts", required: false)
+        
     </body>
 </html>
