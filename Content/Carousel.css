@@ -74,7 +74,13 @@ article.prevBtn:hover {
 }
 .slide-one p.tag-line {
     font-size: 13px;
-    margin-top: 240px;
+    margin-top: 55px;
+}
+.slide-one p.company-goal {
+    font-size: 14px;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 .slide-one p.services {
     font-size: 11px;
