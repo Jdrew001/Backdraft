@@ -67,18 +67,30 @@
            <div class="service-one">
                <img src="~/Content/Images/Map@2x.png" alt="State Move Icon" />
                <h4>State and Local Moves</h4>
-               <p>Text that will display the details involving moving in state and local</p>
+               <p>We currently provide local moves in the Dallas area Metroplex  and in-state moves. Local moves are typically charged at an hourly rate with a one-time base trip charge. Out of town moves can be provided at an hourly rate or flat rate. Trip charges for out of town moves will be figured based on distance of move.</p>
            </div>
            <div class="service-two">
                 <img src="~/Content/Images/Clipboard@2x.png" alt="Office Moves" />
                 <h4>Residential and Office Moves</h4>
-               <p>Text that will display the details involving residential and office moves</p>
+               <p>No move to big or to small!  We have experience in apartment moves, house moves, and office moves. You will receive quality work and care of your belongings whether it’s a personal move or business move.</p>
            </div>
            <div class="service-three">
                 <img src="~/Content/Images/Truck@2x.png" alt="Piano Moves" />
                 <h4>Piano Moving</h4>
-               <p>Text that will display the details involving piano moves</p>
+               <p>Pianos, whether upright or baby-grand, takes extra care and know-how to move properly and safely. We have experience and use the proper equipment to take care of these items for you so you don’t have to hire an extra company just for your piano.</p>
            </div>
+        </div>
+        <div class="second-item-container">
+            <div class="service-four">
+                <img src="~/Content/Images/Running.png" alt="Running" />
+                <h4>Miscellaneous or Small Projects</h4>
+                <p>Need a delivery? Pick-up and delivery?  Assembly?  Or maybe just things moved around the house? We can help you out! Price will be agreed upon at time of scheduling.</p>
+            </div>
+            <div class="service-five">
+                <img src="~/Content/Images/Box-Closed.png" alt="Box" />
+                <h4>Packing and Unpacking</h4>
+                <p>This is the text that will be in the Packing and Unpacking box</p>
+            </div>
         </div>
         <div class="advertise-text">
             <p>This is text that will display to the users of the site telling them who you are and then they will click on it to go to the contact page and you will get more business!</p>
@@ -99,15 +111,14 @@
             <ul class="about-backdraft-home">
                 <li class="about-company">
                     <a class="header-one accordian-header">About Company</a>
-                    <p id="first" class="accordian-content">Backdraft Movers is a local firefighter owned and operated company.  We use off duty firefighters along with professional full time staff.  Regardless of whoever responds to your moving needs with Backdraft movers they will be trustworthy, courteous, professional, and hard working.</p>
+                    <p id="first" class="accordian-content">Backdraft Movers is a local firefighter owned and operated company.  We use off duty firefighters along with professional full time staff.  Regardless of whoever responds to your moving needs with Backdraft movers they will be trustworthy, courteous, professional, and hard working. 
+ We are a full service moving company offering very competitive rates with high quality service.  The owner and employees have years of experience in residential and office moves, furniture delivery, assembly and disassembly.  
+We arrive with all the proper tools and equipment to move your belongings safely and efficiently.  Such as dollies, blankets, plastic wrap, straps, etc……. 
+</p>
                 </li>
                 <li class="our-mission">
                     <a class="header-two accordian-header">Our Goal</a>
                     <p id="second" class="accordian-content">Our goal is 100% customer satisfaction.  We want to leave our customers not only happy, but impressed with a job we done.  </p>
-                </li>
-                <li class="our-vision">
-                    <a class="header-three accordian-header">Some Title</a>
-                    <p id="third" class="accordian-content">Backdraft Movers is a full service moving company offering very competitive rates with high quality service.  The owner and employees have years of experience in residential and office moves, furniture delivery, assembly and disassembly.</p>
                 </li>
             </ul>
 
@@ -138,39 +149,68 @@
         //if so remove it...Same with all three
         //Also animating the paragraph to visble if active
         if ($('div.service-one').hasClass('active')) {
-            //console.log("Remove Class");
+            
             $("div.service-one").removeClass("active");
             $("div.service-one > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-one > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
             $("div.service-one").addClass("active");
             $("div.service-one > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-one > img").animate({ paddingTop: '0' }, "0.5");
         }
 
     });
     $(".service-two").click(function () {
 
         if ($('div.service-two').hasClass('active')) {
-            //console.log("Remove Class");
+            
             $("div.service-two").removeClass("active");
             $("div.service-two > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-two > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
             $("div.service-two").addClass("active");
             $("div.service-two > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-two > img").animate({ paddingTop: '0' }, "0.5");
         }
 
     });
     $(".service-three").click(function () {
 
         if ($('div.service-three').hasClass('active')) {
-            //console.log("Remove Class");
             $("div.service-three").removeClass("active");
             $("div.service-three > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-three > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
+
             $("div.service-three").addClass("active");
             $("div.service-three > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-three > img").animate({ paddingTop: '0' }, "0.5");
+        }
+    });
+    $(".service-four").click(function () {
+
+        if ($('div.service-four').hasClass('active')) {
+            $("div.service-four").removeClass("active");
+            $("div.service-four > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-four > img").animate({ paddingTop: '40' }, "0.5");
+        } else {
+
+            $("div.service-four").addClass("active");
+            $("div.service-four > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-four > img").animate({ paddingTop: '0' }, "0.5");
+        }
+    });
+    $(".service-five").click(function () {
+
+        if ($('div.service-five').hasClass('active')) {
+            $("div.service-five").removeClass("active");
+            $("div.service-five > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-five > img").animate({ paddingTop: '40' }, "0.5");
+        } else {
+
+            $("div.service-five").addClass("active");
+            $("div.service-five > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-five > img").animate({ paddingTop: '0' }, "0.5");
         }
     });
 
@@ -198,9 +238,13 @@
             $('p#first').show(500);
             $("p#first").animate({ opacity: '1.0' }, "0.5");
 
+            //Animate the container size to hold all the content accordingly
+            $("section.about-why-section").animate({ height: '600' }, "0.5");
+
         } else if ($('p#first').css('display') === 'block') {
             //$("p#first").animate({ opacity: '0' }, "0.5");
             $('p#first').hide(500);
+
         }
     });
 
@@ -213,6 +257,7 @@
         if ($('p#second').css('display') === 'none') {
             $('p#second').show(500);
             $("p#second").animate({ opacity: '1.0' }, "0.5");
+            $("section.about-why-section").animate({ height: '550' }, "0.5");
 
         } else if ($('p#second').css('display') === 'block') {
             //$("p#second").animate({ opacity: '0' }, "0.5");
