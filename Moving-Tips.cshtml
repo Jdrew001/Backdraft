@@ -7,4 +7,296 @@
     Author: Drew Atkison
 */
 }
+<!--Moving tips title-->
+<section class="about-title">
+    <article class="header-article">
+        <h1><strong>Moving Tips</strong></h1>
+    </article>
+    <article class="about-bread">
+        <p><a class="anchor" href="Index">Home</a> / <a class="anchor" href="Moving-Tips">Moving Tips</a></p>
+    </article>
+</section>
 
+
+<section class="moving-tips-container">
+    <div class="moving-tips-lid">
+        <article class="tip-one">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number one</h4></li>
+                </ul>
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-two">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number two</h4></li>
+                </ul>
+                
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-three">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number three</h4></li>
+                </ul>
+                
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-four">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number four</h4></li>
+                </ul>
+                
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-five">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number five</h4></li>
+                </ul>
+                
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-six">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number six</h4></li>
+                </ul>
+                
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-seven">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number seven</h4></li>
+                    <p>This is a random tip that will be on the page for the clients</p>
+                </ul>
+            </div>
+        </article>
+        <article class="tip-eight">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number eight</h4></li>
+                </ul>
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+        <article class="tip-nine">
+            <div>
+                <ul>
+                    <li class="moving-left">
+                        <h5>&#10067</h5>
+                    </li>
+                    <li class="moving-right"><h4>Tip number nine</h4></li>
+                </ul>   
+                <p>This is a random tip that will be on the page for the clients</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<script>
+    /*
+    Everytime one of the divs are clicked based on there class then run the conditional statement
+
+    statement: If it has the class active then remove the class, change the opacity and height, 
+    and change the picture to a white color
+    */
+
+    $(document).ready(function () {
+        $('div.moving-tips-lid > article.tip-one').addClass('active');
+        $('div.moving-tips-lid > article.tip-one p').animate({ opacity: '1.0' }, "0.8");
+        $('div.moving-tips-lid > article.tip-one').animate({ height: '80px' }, "0.8");
+
+        $('div.moving-tips-lid article').hover(function () {
+            $(this).addClass('active-hover');
+        }, function () {
+            $(this).removeClass('active-hover');
+        });
+    });
+
+
+
+    $('div.moving-tips-lid article.tip-one').click(function () {
+        if ($('div.moving-tips-lid > article.tip-one').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-one').removeClass('active');
+            $('div.moving-tips-lid > article.tip-one').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-one p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-one').addClass('active');
+            $('div.moving-tips-lid > article.tip-one').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-one p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-two').click(function () {
+        if ($('div.moving-tips-lid > article.tip-two').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-two').removeClass('active');
+            $('div.moving-tips-lid > article.tip-two').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-two p').animate({ opacity: '0' }, "0.5");
+
+        } else {
+            $('div.moving-tips-lid > article.tip-two').addClass('active');
+            $('div.moving-tips-lid > article.tip-two').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-two p').animate({ opacity: '1.0' }, "0.5");
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-three').click(function () {
+        if ($('div.moving-tips-lid > article.tip-three').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-three').removeClass('active');
+            $('div.moving-tips-lid > article.tip-three').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-three p').animate({ opacity: '0' }, "0.5");
+
+        } else {
+            $('div.moving-tips-lid > article.tip-three').addClass('active');
+            $('div.moving-tips-lid > article.tip-three').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-three p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-four').click(function () {
+        if ($('div.moving-tips-lid > article.tip-four').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-four').removeClass('active');
+            $('div.moving-tips-lid > article.tip-four').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-four p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-four').addClass('active');
+            $('div.moving-tips-lid > article.tip-four').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-four p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-five').click(function () {
+        if ($('div.moving-tips-lid > article.tip-five').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-five').removeClass('active');
+            $('div.moving-tips-lid > article.tip-five').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-five p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-five').addClass('active');
+            $('div.moving-tips-lid > article.tip-five').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-five p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-six').click(function () {
+        if ($('div.moving-tips-lid > article.tip-six').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-six').removeClass('active');
+            $('div.moving-tips-lid > article.tip-six').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-six p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-six').addClass('active');
+            $('div.moving-tips-lid > article.tip-six').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-six p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-seven').click(function () {
+        if ($('div.moving-tips-lid > article.tip-seven').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-seven').removeClass('active');
+            $('div.moving-tips-lid > article.tip-seven').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-seven p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-seven').addClass('active');
+            $('div.moving-tips-lid > article.tip-seven').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-seven p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-eight').click(function () {
+        if ($('div.moving-tips-lid > article.tip-eight').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-eight').removeClass('active');
+            $('div.moving-tips-lid > article.tip-eight').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-eight p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-eight').addClass('active');
+            $('div.moving-tips-lid > article.tip-eight').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-eight p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+    $('div.moving-tips-lid article.tip-nine').click(function () {
+        if ($('div.moving-tips-lid > article.tip-nine').hasClass('active')) {
+
+            //Removing class, hide the paragraph, and change size of the article
+            $('div.moving-tips-lid > article.tip-nine').removeClass('active');
+            $('div.moving-tips-lid > article.tip-nine').animate({ height: '55px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-nine p').animate({ opacity: '0' }, "0.5");
+
+
+        } else {
+            $('div.moving-tips-lid > article.tip-nine').addClass('active');
+            $('div.moving-tips-lid > article.tip-nine').animate({ height: '80px' }, "0.5");
+            $('div.moving-tips-lid > article.tip-nine p').animate({ opacity: '1.0' }, "0.5");
+
+
+        }
+    });
+</script>

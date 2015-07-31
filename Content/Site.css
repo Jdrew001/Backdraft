@@ -175,7 +175,7 @@ article.business-hours {
 article.business-hours h4 {
     font-size: 12px;
     text-transform: uppercase;
-    padding-left: 25px;
+    padding-left: 0;
 }
 article.business-hours ul {
     list-style-type: none;
@@ -197,7 +197,7 @@ article.navigation {
 article.navigation h4 {
     font-size: 12px;
     text-transform: uppercase;
-    padding-left: 75px;
+    padding-left: 20%;
 }
 article.navigation ul {
     list-style-type: none;
@@ -458,7 +458,7 @@ article.about-article {
 ul.about-backdraft-home {
     border: 1px solid rgba(153, 153, 153, 0.4);
     margin: 50px 0 0 0;
-    padding: 3px 0px 9% 10px;
+    padding: 3px 0px 0 10px;
     list-style-type: none;
     height: auto;
     background-color: white;
@@ -485,6 +485,7 @@ li.our-vision {
     display: block;
     padding: 20px 0;
     cursor: pointer;
+    padding: 20px 30px 20px 30px;
 }
 .accordian-header:hover {
     color: #B13528;
@@ -493,7 +494,7 @@ li.our-vision {
 .accordian-content {
     opacity: 0.0;
     overflow: visible;
-    padding: 0 0 20px 0;
+    padding: 0 30px 20px 30px;
     color: rgba(153,153,153, 1);
 }
 
@@ -595,6 +596,10 @@ div.choose-four p {
 
 /*Class added with jquery*/
 .active {
+    background-color: #B13528;
+    color: white;
+}
+.active-hover {
     background-color: #B13528;
     color: white;
 }
@@ -1006,4 +1011,55 @@ section.specialty-pricing li.special-price {
     padding-left: 60px;
     color: rgba(153, 153, 153, 0.7);
     float: left;
+}
+
+/*Moving Tips Page Styles*/
+section.moving-tips-container {
+    background-color: #FFFFFF;
+    height: 950px;
+}
+section.moving-tips-container div.moving-tips-lid {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+section.moving-tips-container article {
+    margin: 20px 0px;
+    border: 1px solid rgba(153,153,153, 0.4);
+    cursor: pointer;
+    height: 55px;
+    
+}
+section.moving-tips-container ul {
+    list-style-type: none;
+}
+section.moving-tips-container li.moving-left {
+    float: left;
+    
+}
+section.moving-tips-container li.moving-right {
+    width: 100%;
+}
+section.moving-tips-container li.moving-paragraph {
+    width: 100%;
+}
+section.moving-tips-container div img {
+    width: 20px;
+    height: 20px;
+}
+section.moving-tips-container p {
+    font-size: 10px;
+    opacity: 0.0;
+    padding: 0 0 0 5.5%;
+}
+section.moving-tips-container div h4 {
+    width: 90%;
+    font-size: 12px;
+}
+section.moving-tips-container h5 {
+    padding: 0 20px;
+    margin: 0;
+}
+section.moving-tips-container div.info-icon {
+    width: 25px;
 }
