@@ -54,10 +54,9 @@
     </div>
 </section>
 
-<!--Services Offered-->
-<section class="service-container service-about-container">
+<section class="service-container">
     <div class="surface">
-        <ul class="about-ul">
+        <ul>
             <li class="services-txt">Our Services</li>
             <li class="company-description">Backdraft Movers is a company with..................</li>
         </ul>
@@ -66,26 +65,38 @@
            <div class="service-one">
                <img src="~/Content/Images/Map@2x.png" alt="State Move Icon" />
                <h4>State and Local Moves</h4>
-               <p>Text that will display the details involving moving in state and local</p>
+               <p>We currently provide local moves in the Dallas area Metroplex  and in-state moves. Local moves are typically charged at an hourly rate with a one-time base trip charge. Out of town moves can be provided at an hourly rate or flat rate. Trip charges for out of town moves will be figured based on distance of move.</p>
            </div>
            <div class="service-two">
                 <img src="~/Content/Images/Clipboard@2x.png" alt="Office Moves" />
                 <h4>Residential and Office Moves</h4>
-               <p>Text that will display the details involving residential and office moves</p>
+               <p>No move to big or to small!  We have experience in apartment moves, house moves, and office moves. You will receive quality work and care of your belongings whether it’s a personal move or business move.</p>
            </div>
            <div class="service-three">
                 <img src="~/Content/Images/Truck@2x.png" alt="Piano Moves" />
                 <h4>Piano Moving</h4>
-               <p>Text that will display the details involving piano moves</p>
+               <p>Pianos, whether upright or baby-grand, takes extra care and know-how to move properly and safely. We have experience and use the proper equipment to take care of these items for you so you don’t have to hire an extra company just for your piano.</p>
            </div>
+        </div>
+        <div class="second-item-container">
+            <div class="service-four">
+                <img src="~/Content/Images/Running.png" alt="Running" />
+                <h4>Miscellaneous or Small Projects</h4>
+                <p>Need a delivery? Pick-up and delivery?  Assembly?  Or maybe just things moved around the house? We can help you out! Price will be agreed upon at time of scheduling.</p>
+            </div>
+            <div class="service-five">
+                <img src="~/Content/Images/Box-Closed.png" alt="Box" />
+                <h4>Packing and Unpacking</h4>
+                <p>This is the text that will be in the Packing and Unpacking box</p>
+            </div>
         </div>
         <div class="advertise-text">
             <p>This is text that will display to the users of the site telling them who you are and then they will click on it to go to the contact page and you will get more business!</p>
             <a>Contact Us</a>
         </div>
     </div>
+    <!--End Services-->
 </section>
-<!--End Services-->
 
 <!--Begin of the read more portion-->
 <section class="about-container">
@@ -93,7 +104,6 @@
         <article id="our-company" class="about-our-company">
             <h4>Our Company</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum euismod bibendum quam nec fringilla. Suspendisse ac dui vitae justo dapibus interdum vitae ac dui. Ut placerat eu magna vitae vulputate. Nullam vehicula lacus id velit cursus, efficitur congue quam tempor. Vivamus euismod justo in elit consectetur, ut commodo lorem elementum. Cras vel tristique nisl. Donec gravida ligula vel lectus consectetur, eleifend vestibulum ex tempus. Etiam sit amet finibus purus. Vivamus sed diam consectetur, vestibulum ex nec, vestibulum nulla. Praesent cursus vel dolor at commodo. Nulla nec nulla pharetra, pulvinar quam at, ullamcorper magna. Aenean tincidunt tortor ac dapibus auctor. Nunc a nisi sodales, faucibus arcu a, eleifend nulla. Pellentesque condimentum, metus nec iaculis sagittis, nibh lacus sodales orci, sed tristique nunc velit nec libero. </p>
-            <img src="~/Content/Images/Picture_One.png" alt="Picture One"/>
         </article>
         <article id="our-history" class="about-our-history">
             <h4>Our History</h4>
@@ -119,39 +129,68 @@
         //if so remove it...Same with all three
         //Also animating the paragraph to visble if active
         if ($('div.service-one').hasClass('active')) {
-            //console.log("Remove Class");
+            
             $("div.service-one").removeClass("active");
             $("div.service-one > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-one > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
             $("div.service-one").addClass("active");
             $("div.service-one > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-one > img").animate({ paddingTop: '0' }, "0.5");
         }
 
     });
     $(".service-two").click(function () {
 
         if ($('div.service-two').hasClass('active')) {
-            //console.log("Remove Class");
+            
             $("div.service-two").removeClass("active");
             $("div.service-two > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-two > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
             $("div.service-two").addClass("active");
             $("div.service-two > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-two > img").animate({ paddingTop: '0' }, "0.5");
         }
 
     });
     $(".service-three").click(function () {
 
         if ($('div.service-three').hasClass('active')) {
-            //console.log("Remove Class");
             $("div.service-three").removeClass("active");
             $("div.service-three > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-three > img").animate({ paddingTop: '40' }, "0.5");
         } else {
-            //console.log("Add Class");
+
             $("div.service-three").addClass("active");
             $("div.service-three > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-three > img").animate({ paddingTop: '0' }, "0.5");
+        }
+    });
+    $(".service-four").click(function () {
+
+        if ($('div.service-four').hasClass('active')) {
+            $("div.service-four").removeClass("active");
+            $("div.service-four > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-four > img").animate({ paddingTop: '40' }, "0.5");
+        } else {
+
+            $("div.service-four").addClass("active");
+            $("div.service-four > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-four > img").animate({ paddingTop: '0' }, "0.5");
+        }
+    });
+    $(".service-five").click(function () {
+
+        if ($('div.service-five').hasClass('active')) {
+            $("div.service-five").removeClass("active");
+            $("div.service-five > p").animate({ opacity: '0' }, "0.5");
+            $("div.service-five > img").animate({ paddingTop: '40' }, "0.5");
+        } else {
+
+            $("div.service-five").addClass("active");
+            $("div.service-five > p").animate({ opacity: '1.0' }, "0.5");
+            $("div.service-five > img").animate({ paddingTop: '0' }, "0.5");
         }
     });
 

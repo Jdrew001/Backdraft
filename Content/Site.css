@@ -8,6 +8,28 @@ ul {
     padding-left: 0 !important;
 }
 
+/*Arrow to move the page back up*/
+.back-to-top {
+    background: none;
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #B13528;
+}
+
+.back-to-top i {
+  font-size: 40px;
+  text-align: center;
+  margin: 24%;
+}
+
 /*Custom Font*/
 @font-face {
     font-family: SinkinSans;
