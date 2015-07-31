@@ -4,6 +4,9 @@ body {
    margin: 0px;
    font-family: SinkinSans, Arial;
 }
+ul {
+    padding-left: 0 !important;
+}
 
 /*Custom Font*/
 @font-face {
@@ -388,7 +391,7 @@ div.service-five {
     height: 250px;
     float: left;
     cursor: pointer;
-    margin: 30px 0 80px 13%;
+    margin: 30px 0 80px 12.5%;
 }
 div.service-five:hover {
     background-color: #B13528;
@@ -852,23 +855,6 @@ article.contact-information div.top-row p {
     float: left;
     padding-left: 10px;
 }
-article.contact-information div.bottom-row h5 {
-    font-size: 11px;
-    width: 100%;
-    margin-top: 120px;
-}
-article.contact-information div.bottom-row img {
-    width: 25px;
-    height: 25px;
-    float: left;
-    margin-top: 6px;
-}
-article.contact-information div.bottom-row p {
-    width: 80%;
-    font-size: 10px;
-    float: left;
-    padding-left: 10px;
-}
 
 /*Begin Pricing Page Styles*/
 section.pricing-container {
@@ -998,4 +984,26 @@ article.pricing-three div.right-price {
     background-color: #B13528;
     color: white;
     padding: 20px 0px;
+}
+section.specialty-pricing {
+    background-color: #FFFFFF;
+    height: 100px;
+}
+section.specialty-pricing div {
+    width: 80%;
+    margin: auto;
+}
+section.specialty-pricing ul {
+    margin: 0;
+    list-style-type: none;
+}
+section.specialty-pricing li.special-title {
+    font-size: 12px;
+    float: left;
+}
+section.specialty-pricing li.special-price {
+    font-size: 10px;
+    padding-left: 60px;
+    color: rgba(153, 153, 153, 0.7);
+    float: left;
 }
