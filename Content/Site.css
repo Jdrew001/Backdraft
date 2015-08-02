@@ -36,6 +36,131 @@ ul {
     src: url('SinkinSans.otf');
 }
 
+/*Responsive Styles*/
+/*Desktop*/
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    /*Heading*/
+nav {
+        font-size: 10px !important;
+        width: 400px !important;        
+}
+
+/*footer styles*/
+article.about-footer {
+    width: 35% !important; 
+    height: 140px !important;   
+}
+
+article.about-footer img {
+    width: 25px !important;
+    height: 25px !important;
+    padding-top: 60px !important;
+}
+
+article.about-footer h4 {
+    font-size: 9px !important;
+    width: 60% !important;
+    padding-left: 30% !important;
+}
+
+article.about-footer p {
+    font-size: 8px !important;
+    padding: 0px 10px 10px 30% !important;
+}
+
+article.address-footer {
+    height: 140px !important;
+}
+
+article.address-footer img {
+    width: 25px !important;
+    height: 25px !important;
+    padding: 60px 0 0 10px !important;
+}
+
+article.address-footer h4 {
+    font-size: 9px !important;
+    padding-left: 50px !important; 
+}
+
+article.address-footer p {
+    font-size: 8px !important;
+}
+    
+    /*pricing styles*/
+    /*Navigation*/
+section.about-title h1 {
+    font-size: 12px !important;
+}
+
+section.about-title p {
+    font-size: 8px;
+}
+
+article.pricing-tagline li.tagline-header {
+    font-size: 10px !important;
+}
+
+article.pricing-tagline li.tagline-paragraph {
+    font-size: 8px !important;
+    padding-left: 30px !important;
+}
+
+/*pricing tags*/
+article.pricing-one {
+    width: 200px !important;
+    height: 465px !important;
+}
+
+article.pricing-one h5 {
+    font-size: 11px !important;
+}
+
+div.pricing-service div.pricing-details h5 {
+    font-size: 9px !important;
+}
+
+article.pricing-two {
+    width: 200px !important;
+    height: 465px !important;
+}
+
+article.pricing-two h5 {
+    font-size: 11px !important;
+}
+
+article.pricing-three {
+    width: 200px !important;
+    height: 465px !important;
+}
+
+article.pricing-three h5 {
+    font-size: 11px !important;
+}
+
+/*Bottom tag line*/
+section.specialty-pricing li.special-title {
+    font-size: 10px !important;    
+}
+
+section.specialty-pricing li.special-price {
+    width: 60% !important;
+    font-size: 8px !important;
+}
+
+}
+
+@media (min-width: 500px) and (max-width: 799px) {
+    
+}
+
+@media only screen and (max-width: 499px) {
+    
+}
+
+
+
 /*Header Styles*/
 header {
     background-color: #FFFFFF;
@@ -50,13 +175,13 @@ header article.company-picture {
 }
 header section.contact-links {
     font-size: 9px;
-    color: #999999;
-    margin: 10px 0 0 40px;
+    color: #999;
+    margin: 30px 0px 0px 0px;
     height: 40px;
-    width: 92%;
+    width: 100%;
     display: inline;
     float: left;
-    border-top: 1.5px solid rgba(153,153,153, 0.2);
+    border-top: 1.5px solid rgba(153, 153, 153, 0.2);
 }
 header section.contact-links ul {
     list-style-type: none;
