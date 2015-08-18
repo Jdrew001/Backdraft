@@ -39,6 +39,92 @@ ul {
 /*Responsive Styles*/
 /*Desktop*/
 
+@media (min-width: 1184px) and (max-width: 1240px) {
+    
+    /*Services Content*/
+div.service-one {  
+        
+}
+
+div.service-two {
+    margin-left: 10% !important;
+}
+
+div.service-three {
+    margin-left: 10% !important;
+}
+    
+}
+
+@media (min-width: 1129px) and (max-width: 1184px) {
+div.service-one {
+    
+}
+
+div.service-two {
+    margin-left: 8% !important;
+}
+
+div.service-three {
+    margin-left: 8% !important;
+}
+div.service-four {
+    margin: 30px 0px 0px 18% !important;
+}
+div.service-five {
+    margin: 30px 0px 80px 8% !important;
+}
+}
+
+@media (min-width: 1126px) and (max-width: 1129px) {
+
+div.service-one {
+    
+}
+div.service-two {
+   margin-left: 6% !important; 
+}
+div.service-three {
+   margin-left: 6% !important;
+}
+div.service-four {
+    margin: 30px 0px 0px 15% !important;
+}
+div.service-five {
+    margin: 30px 0px 80px 6% !important;
+}
+
+}
+
+@media (min-width: 1001px) and (max-width: 1126px) {
+div.service-one {
+   
+}
+div.service-two {
+    margin-left: 3% !important;
+}
+div.service-three {
+    margin-left: 3% !important;
+}
+div.service-four {
+   margin: 30px 0px 0px 15% !important; 
+}
+div.service-five {
+   margin: 30px 0px 80px 7% !important;
+}
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+div.service-five {
+    margin-left: 34% !important;
+}
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    div.service-five {
+    margin-left: 31% !important;
+}
+}
+
 @media (min-width: 800px) and (max-width: 1000px) {
     /*Heading*/
 nav {
@@ -87,7 +173,32 @@ article.address-footer h4 {
 article.address-footer p {
     font-size: 8px !important;
 }
+
+/*Home styles*/
+div.service-one {
+    margin-left: 0px !important;
+}
+
+div.service-two {
+    margin-right: 0px !important;
+    float: right !important;
+}
+
+
+div.service-three {
+    margin-left: 0px !important;
+    margin-top: 30px !important;
     
+}
+div.service-four {
+    margin-right: 0!important;
+    float: right !important;
+     
+} 
+
+section.service-container {
+    height: 1020px !important;
+}
     /*pricing styles*/
     /*Navigation*/
 section.about-title h1 {
